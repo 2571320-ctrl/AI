@@ -1,0 +1,204 @@
+@import "tailwindcss";
+
+:root {
+  --primary: #1E40AF;
+  --primary-dark: #0F172A;
+  --primary-light: #3B82F6;
+  --accent: #FF5B23;
+  --accent-hover: #E04816;
+  --navy: #0B1E36;
+  --navy-light: #162F52;
+  --slate-bg: #F8FAFC;
+  --slate-border: #E2E8F0;
+  --slate-text: #334155;
+  --slate-muted: #64748B;
+}
+
+body {
+  background-color: #F8FAFC;
+  color: #0F172A;
+  font-family: 'Pretendard Variable', Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, sans-serif;
+  word-break: keep-all;
+  overflow-x: hidden;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.font-mono-plex {
+  font-family: 'IBM Plex Mono', monospace;
+}
+
+/* Sinbiweb Style Card Utilities */
+.sinbi-card {
+  background-color: #FFFFFF;
+  border: 1px solid #E2E8F0;
+  border-radius: 16px;
+  box-shadow: 0 4px 20px -2px rgba(15, 23, 42, 0.05), 0 2px 6px -1px rgba(15, 23, 42, 0.03);
+  transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.sinbi-card:hover {
+  box-shadow: 0 12px 28px -4px rgba(15, 23, 42, 0.09), 0 4px 12px -2px rgba(15, 23, 42, 0.05);
+  transform: translateY(-2px);
+}
+
+.sinbi-card-elevated {
+  background-color: #FFFFFF;
+  border: 1px solid rgba(226, 232, 240, 0.8);
+  border-radius: 20px;
+  box-shadow: 0 10px 30px -4px rgba(15, 23, 42, 0.08);
+}
+
+.sinbi-card-dark {
+  background: linear-gradient(145deg, #0F172A, #1E293B);
+  color: #F8FAFC;
+  border: 1px solid #334155;
+  border-radius: 20px;
+  box-shadow: 0 12px 30px -4px rgba(0, 0, 0, 0.25);
+}
+
+/* Sinbiweb Style Buttons */
+.sinbi-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  border-radius: 12px;
+  transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1);
+  cursor: pointer;
+  user-select: none;
+  touch-action: manipulation;
+}
+
+.sinbi-btn-primary {
+  background-color: #FF5B23;
+  color: #FFFFFF;
+  box-shadow: 0 4px 14px rgba(255, 91, 35, 0.35);
+}
+
+.sinbi-btn-primary:hover {
+  background-color: #E04816;
+  box-shadow: 0 6px 20px rgba(255, 91, 35, 0.45);
+  transform: translateY(-1px);
+}
+
+.sinbi-btn-blue {
+  background: linear-gradient(135deg, #1D4ED8, #2563EB);
+  color: #FFFFFF;
+  box-shadow: 0 4px 14px rgba(37, 99, 235, 0.3);
+}
+
+.sinbi-btn-blue:hover {
+  background: linear-gradient(135deg, #1E40AF, #1D4ED8);
+  box-shadow: 0 6px 20px rgba(37, 99, 235, 0.4);
+  transform: translateY(-1px);
+}
+
+.sinbi-btn-outline {
+  background-color: #FFFFFF;
+  color: #0F172A;
+  border: 1px solid #CBD5E1;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.04);
+}
+
+.sinbi-btn-outline:hover {
+  background-color: #F8FAFC;
+  border-color: #94A3B8;
+  transform: translateY(-1px);
+}
+
+.sinbi-btn-outline-white {
+  background-color: rgba(255, 255, 255, 0.1);
+  color: #FFFFFF;
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  backdrop-filter: blur(8px);
+}
+
+.sinbi-btn-outline-white:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+  border-color: rgba(255, 255, 255, 0.5);
+}
+
+/* Badge pill */
+.sinbi-pill {
+  display: inline-flex;
+  align-items: center;
+  padding: 4px 12px;
+  border-radius: 9999px;
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: -0.01em;
+}
+
+/* Ticket dashed divider */
+.ticket-divider {
+  border-top: 2px dashed #CBD5E1;
+  position: relative;
+}
+.ticket-divider::before,
+.ticket-divider::after {
+  content: '';
+  position: absolute;
+  top: -10px;
+  width: 20px;
+  height: 20px;
+  background-color: #F8FAFC;
+  border-radius: 50%;
+  border: 1px solid #CBD5E1;
+}
+.ticket-divider::before {
+  left: -22px;
+}
+.ticket-divider::after {
+  right: -22px;
+}
+
+/* Floating quick menu */
+.quick-menu-shadow {
+  box-shadow: 0 10px 30px -5px rgba(15, 23, 42, 0.15), 0 0 1px 1px rgba(15, 23, 42, 0.05);
+}
+
+/* Gradient Hero */
+.sinbi-hero-gradient {
+  background: radial-gradient(circle at 85% 20%, rgba(37, 99, 235, 0.3) 0%, transparent 50%),
+              radial-gradient(circle at 15% 80%, rgba(255, 91, 35, 0.2) 0%, transparent 45%),
+              linear-gradient(145deg, #0A192F 0%, #0F2A4A 40%, #162F52 100%);
+}
+
+/* Animations */
+@keyframes spinSlow {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.spin-slow {
+  animation: spinSlow 20s linear infinite;
+}
+
+@keyframes pulseSubtle {
+  0%, 100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  50% {
+    transform: scale(1.05);
+    opacity: 0.9;
+  }
+}
+
+.pulse-subtle {
+  animation: pulseSubtle 3s ease-in-out infinite;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .spin-slow,
+  .pulse-subtle,
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}

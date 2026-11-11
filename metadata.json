@@ -1,0 +1,6 @@
+{
+  "name": "천안 AI강사 유형 테스트",
+  "description": "7문항 3분 테스트로 나의 AI강사 유형을 알아보세요. 천안 AI강사 양성과정 모집 중.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+  <rect width="1200" height="630" fill="#F3EEE3"/>
+  <!-- Border -->
+  <rect x="24" y="24" width="1152" height="582" fill="none" stroke="#141414" stroke-width="4"/>
+  <rect x="34" y="34" width="1132" height="562" fill="none" stroke="#141414" stroke-width="2" stroke-dasharray="8 8"/>
+  
+  <!-- Header tag -->
+  <rect x="80" y="80" width="340" height="48" rx="6" fill="#FFD45C" stroke="#141414" stroke-width="3" transform="rotate(-2 80 80)"/>
+  <text x="96" y="112" font-family="'Pretendard', sans-serif" font-weight="900" font-size="20" fill="#141414" transform="rotate(-2 80 80)">천안 AI강사 양성과정 · 2026</text>
+
+  <!-- Big Headline -->
+  <text x="80" y="230" font-family="'Pretendard', sans-serif" font-weight="900" font-size="76" fill="#141414" letter-spacing="-2">나는 어떤</text>
+  <text x="80" y="325" font-family="'Pretendard', sans-serif" font-weight="900" font-size="76" fill="#141414" letter-spacing="-2">AI강사 유형일까?</text>
+  
+  <!-- Subtitle -->
+  <text x="80" y="415" font-family="'Pretendard', sans-serif" font-weight="600" font-size="28" fill="#141414">7문항으로 찾아보는 나의 무기와 천안 소상공인 맞춤 강의 스타일</text>
+  <text x="80" y="460" font-family="'IBM Plex Mono', monospace" font-weight="600" font-size="22" fill="#FF5B23">7 QUESTIONS · 3 MINUTES · CHEONAN AI TEACHER TYPE</text>
+
+  <!-- Stamp Badge (Right) -->
+  <g transform="translate(930, 310)">
+    <circle cx="0" cy="0" r="140" fill="#F3EEE3" stroke="#FF5B23" stroke-width="6"/>
+    <circle cx="0" cy="0" r="126" fill="none" stroke="#FF5B23" stroke-width="2" stroke-dasharray="5 5"/>
+    <circle cx="0" cy="0" r="116" fill="none" stroke="#FF5B23" stroke-width="2"/>
+    <circle cx="0" cy="0" r="60" fill="#FF5B23"/>
+    <text x="0" y="20" font-family="'Pretendard', sans-serif" font-weight="900" font-size="52" fill="#F3EEE3" text-anchor="middle">천안</text>
+    <path id="circlePath" fill="none" d="M -90,0 A 90,90 0 1,1 90,0 A 90,90 0 1,1 -90,0"/>
+    <text font-family="'IBM Plex Mono', monospace" font-size="16" font-weight="700" fill="#FF5B23" letter-spacing="4">
+      <textPath href="#circlePath" startOffset="5%">CHEONAN · AI TEACHER · 2026 · </textPath>
+    </text>
+  </g>
+
+  <!-- Bottom Bar -->
+  <rect x="80" y="515" width="480" height="54" rx="10" fill="#FF5B23" stroke="#141414" stroke-width="3"/>
+  <text x="320" y="550" font-family="'Pretendard', sans-serif" font-weight="800" font-size="22" fill="#F3EEE3" text-anchor="middle">지금 3분 테스트 시작하기 →</text>
+</svg>
