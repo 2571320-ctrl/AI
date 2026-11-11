@@ -97,7 +97,7 @@ export const COURSE_DATA: CourseInfo = {
 
   // 문의 및 신청 [신청 링크 URL], [전화번호], [카카오톡 채널 링크], [주최 기관]
   contact: {
-    phone: '041-550-2026',
+    phone: '041-552-0014',
     kakaoChannel: '@천안AI강사',
     kakaoUrl: 'https://pf.kakao.com',
     applyUrl: 'https://forms.gle/cheonan-ai-teacher',
